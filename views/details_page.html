@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Getting details</title>
+	<link rel="stylesheet" type="text/css" href="css/details_page.css">
+	<script type="text/javascript" src="/js/details_page.js"></script>
+</head>
+<body>
+	<div class="navbar">
+		<br>
+		<h1>Details of the new user : <span id = "name"></span></h1>
+	</div>
+	<br>
+	<div class="main_div">
+		<form method="post" action="/new_user_submit">
+		<center>
+			<label for="email" class="head">Re-enter email</label><br>
+			<input type="email" name="email" id="email" required><br><br>
+			<label for="pass" class="head">Re-enter password</label><br>
+			<input type="password" name="pass" id="pass" required><br><br>
+			<label for="name" class="head">Name</label><br>
+					<input type="text" name="name" id="name" placeholder="Your name" required><br><br>
+			<label for="phone_num" class="head">Phone Number</label><br>
+			<input type="tel" name="phone_num" id="phone_num" required><br>
+			<small>Format: 123-456-7890</small><br><br>
+			<label for="dob" class="head">Date of Birth</label><br>
+			<input type="date" name="dob" id="dob" required><br><br>
+			<label for="addr" class="head">Address</label><br>
+			<input type="text" name="addr" id="addr" required><br><br>
+			<label for="usr_img" class="head">Profile picture<span style="color: white">Spaces need</span></label>
+			<input type="file" name="usr_img" id="usr_img" accept="image/*" required><br><br>
+			<input type="submit" value="Sumbit">
+			</center>
+		</form>
+	</div>
+</body>
+</html>

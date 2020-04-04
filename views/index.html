@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Backend App Index</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/index.js"></script>
+	
+</head>
+<body>	
+	<div class="navbar" style="background-color: #ffe4b5;">
+		<center><h1 style="color: black; font-weight: bold;">
+			Sample Web application
+		</h1>
+		<br>
+		<div class="options">
+			<button id="login_button">Login</button>
+			<button id="signup_button">Signup</button>
+		</div></center>
+	</div>
+	<div class="main_div">
+		<div class = "login_form">
+			<h2>Login Page</h2>
+			<form method="post" action="/after_login">
+				<label for="email">Username</label><br>
+				<input type="email" name="email" id="email" required>
+				<br>
+				<label for="password">Password</label><br>
+				<input type="password" name="pass" id="pass" required><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<div class = "signup_form">
+			<h2>Signup Page</h2>
+			<form method="post" action="/signup">
+				
+				<label for="signup_email">Email</label><br>
+					<input type="email" name="signup_email" id="signup_email" placeholder="Your email id" required><br><br>
+				<label for="signup_password">Password</label><br>
+					<input type="password" name="signup_password" id="signup_password" placeholder="Preferred Password" required><br><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

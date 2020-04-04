@@ -1,0 +1,17 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 100%;
+}
+.navbar{
+	height: 15%;
+	background-color: #ffe4b5;
+	text-align: center;
+}
+.head{
+	font-weight: bold;
+}
+span{
+	font-weight: small;
+}
